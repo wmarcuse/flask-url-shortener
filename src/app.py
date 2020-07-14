@@ -45,7 +45,7 @@ def create_app(config):
 
     try:
         dbs.create_all(app=app)
-    except OperationalError as exc:
+    except OperationalError:
         from models import Url, Shortcode, Stat, Redirect
         dbs.create_all()
         dbs.session.commit()
