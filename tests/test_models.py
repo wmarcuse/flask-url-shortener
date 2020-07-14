@@ -167,9 +167,13 @@ class TestRedirectModel:
         url = Redirect.redirect(shortcode='090909')
         assert url == 'scenario8.com'
 
+    def test_redirect_in_use_success(self):
+        url = Redirect.redirect(shortcode='090909')
+        assert url == 'scenario8.com'
+
     def test_stat_redirect_is_not_zero(self):
         stats = Stat.get_stats(shortcode='090909')
-        assert stats['redirectCount'] == 1
+        assert stats['redirectCount'] == 2
 
     def test_check_in_use_true(self):
         assert Redirect.check_in_use(shortcode='090909')

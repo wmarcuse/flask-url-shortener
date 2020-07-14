@@ -73,7 +73,7 @@ class AbstractHttpException(ABC, Exception):
 
     def __str__(self):
         """For development purposes"""
-        return self.statement
+        return self.statement  # pragma: no cover
 
 
 class InvalidRequestPayload(AbstractHttpException):
