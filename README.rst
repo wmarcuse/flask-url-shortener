@@ -8,7 +8,7 @@ This is an URL shortening REST API built with Python and Flask.
 Installation
 ------------
 
-Create a virtual environment and install teh requirements
+Create a virtual environment and install the requirements
 
     pip install requirements.txt
 

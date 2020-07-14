@@ -70,6 +70,6 @@ def create_app(config):
 
 
 if __name__ == '__main__':
-    ENVIRONMENT_DEBUG = os.environ.get('APP_DEBUG', True)
-    ENVIRONMENT_PORT = os.environ.get('APP_PORT', 5000)
-    create_app(APP_CONFIG).run(host='0.0.0.0', port=ENVIRONMENT_PORT, debug=ENVIRONMENT_DEBUG)
+    ENVIRONMENT_DEBUG = os.environ.get('APP_DEBUG', True)  # pragma: no cover
+    ENVIRONMENT_PORT = os.environ.get('APP_PORT', 5000)  # pragma: no cover
+    create_app(APP_CONFIG).run(host='0.0.0.0', port=ENVIRONMENT_PORT, debug=ENVIRONMENT_DEBUG)  # pragma: no cover
