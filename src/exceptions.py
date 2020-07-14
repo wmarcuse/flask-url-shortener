@@ -52,10 +52,11 @@ class AbstractHttpException(ABC, Exception):
         ]
         for attr in required_attributes:
             if not hasattr(cls, attr):
-                raise NotImplementedError('{EXCEPTION} cannot be instantiated without: {PARAM}'.format(
-                    EXCEPTION=cls.__name__,
-                    PARAM=attr
-                ))
+                raise NotImplementedError(  # pragma: no cover
+                    '{EXCEPTION} cannot be instantiated without: {PARAM}'.format(  # pragma: no cover
+                        EXCEPTION=cls.__name__,  # pragma: no cover
+                        PARAM=attr  # pragma: no cover
+                    ))  # pragma: no cover
 
     def http_response(self):
         """
