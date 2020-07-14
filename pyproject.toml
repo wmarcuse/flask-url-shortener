@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "flask_url_shortener"
+version = "0.1.0"
+description = "URL shorten webservice built with Flask."
+authors = ["Wolf Marcuse"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">3.6"
+click = "7.1.2"
+Flask = "1.1.2"
+Flask-SQLAlchemy = "2.4.3"
+itsdangerous = "1.1.0"
+Jinja2 = "2.11.2"
+MarkupSafe = "1.1.1"
+SQLAlchemy = "1.3.18"
+Werkzeug = "1.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.4.3"
+mock = "^4.0.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

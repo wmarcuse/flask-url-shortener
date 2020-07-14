@@ -1,7 +1,7 @@
 URL shortening with Flask
 =========================
 
-|Status| |Python versions| |Build status| |Coverage| |License|
+|Python versions| |Build status| |Coverage| |License|
 
 This is an URL shortening REST API built with Python and Flask.
 
@@ -31,3 +31,15 @@ available in the requirements manifest
 To run the tests, set the `tests` directory as you current working directory and run
 
     pytest -s
+
+
+.. |Python versions| image:: https://img.shields.io/pypi/pyversions/pokeman
+
+.. |Build Status| image:: https://api.travis-ci.org/wmarcuse/flask-url-shortener.png?branch=master
+  :target: https://travis-ci.org/github/wmarcuse/flask-url-shortener
+
+.. |Coverage| image:: https://codecov.io/gh/wmarcuse/flask-url-shortener/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/wmarcuse/flask-url-shortener
+
+.. |License| image:: https://img.shields.io/github/license/wmarcuse/flask-url-shortener
+  :target: https://github.com/wmarcuse/flask-url-shortener
