@@ -27,7 +27,7 @@ def app(request):
 
 
 def remove_test_database():
-    os.remove(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'src') + r'\testing.db')
+    os.remove(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'src') + r'/testing.db')
 
 
 @pytest.mark.usefixtures('app')
